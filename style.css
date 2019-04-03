@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    margin: auto;
+    background-color: #292D3E;
+    font-size: 120%;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+h1>span {
+    transition: color 0.2s ease-in-out;
+}
+
+input {
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+}
+
+h1>span:hover {
+    color: #acecff;
+}
+
+form {
+    margin: 50px auto;
+    width: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 20px auto;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    border: none;
+}
+
+textarea {
+    transition: 0.2s ease-in-out;
+}
+
+input:hover,
+textarea:hover,
+textarea:focus {
+    background-color: #acecff;
+    cursor: pointer;
+}
+
+#rezultat {
+    color: #69a4b6;
+    font-size: 1.2em;
+}
+
+table {
+    position: relative;
+    margin: 0 0 20px 20px;
+}
+
+table,
+tr,
+td {
+    border-collapse: collapse;
+    border: 1px solid white;
+    color: white;
+}
+
+legend {
+    color: white;
+}
+
+fieldset {
+    border: 3px solid white;
+    box-sizing: border-box;
+    width: 50%;
+    margin: auto;
+    transition: border-color 0.2s ease-in-out;
+}
+
+fieldset:hover,
+fieldset:focus {
+    border-color: #69a4b6;
+}
