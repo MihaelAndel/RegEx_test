@@ -1,22 +1,31 @@
-var rezultat = document.getElementById("rezultat");
-var tekst_input = document.getElementById("tekst");
-var uzorak_input = document.getElementById("uzorak");
-var raspon = document.getElementById("slider");
-var vrijednost = document.getElementById("vrijednost");
-var rezultatZbrajanja = document.getElementById("rezultat-zbrajanja");
+var rezultat;
+var tekst_input;
+var uzorak_input;
+var raspon;
+var vrijednost;
+var rezultatZbrajanja;
 
-tekst_input.addEventListener("input", function () {
-    ispitajTekst();
-});
+function inicijalizacija() {
+    rezultat = document.getElementById("rezultat");
+    tekst_input = document.getElementById("tekst");
+    uzorak_input = document.getElementById("uzorak");
+    raspon = document.getElementById("slider");
+    vrijednost = document.getElementById("vrijednost");
+    rezultatZbrajanja = document.getElementById("rezultat-zbrajanja");
 
-uzorak_input.addEventListener("input", function () {
-    ispitajTekst();
-});
+    tekst_input.addEventListener("input", function () {
+        ispitajTekst();
+    });
 
-raspon.addEventListener("input", function () {
-    vrijednost.innerHTML = raspon.value;
-    rezultatZbrajanja.innerHTML = 100 + parseInt(raspon.value);
-});
+    uzorak_input.addEventListener("input", function () {
+        ispitajTekst();
+    });
+
+    raspon.addEventListener("input", function () {
+        vrijednost.innerHTML = raspon.value;
+        rezultatZbrajanja.innerHTML = 100 + parseInt(raspon.value);
+    });
+}
 
 function ispitajTekst() {
     var tekst = tekst_input.value;
